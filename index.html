@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>主页</title>
-    <style type="stylesheet">
+    <style>
         *{
             margin: 0px;
             padding: 0px;
@@ -14,7 +14,29 @@
             transition: all 0.5s;
         }
         .nav:hover{
-            background-color: rgba(30, 30, 30, 0.2);
+            background-color: rgba(30, 30, 30, 0.5);
+        }
+        ul{
+            list-style: none;
+        }
+        .nav ul li{
+            text-shadow: 1px 1px 1px black;
+            float: left;
+            padding: 10px;
+            margin-left: 40px;
+            font-size: 20px;
+            color: white;
+        }
+        .nav ul li ul{
+            z-index: 999;
+            position:absolute;
+            padding: 0px;
+        }
+        .nav ul li ul li{
+            font-size: 20px;
+            margin-left: 0px;
+            clear: both;
+            padding: 0px;
         }
     </style>
 </head>
